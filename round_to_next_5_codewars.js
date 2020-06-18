@@ -18,6 +18,14 @@ Input may be any positive or negative integer (including 0).
 You can assume that all inputs are valid integers.
 */
 
-function roundToNext5(n){
-  // ...
+const roundToNext5 = (n) => {
+  let answer = n;
+  if(n === 0) {
+    return 0;
+  }
+  while(answer % 5 !== 0) {
+    answer++;
+  }
+
+  return answer
 }
